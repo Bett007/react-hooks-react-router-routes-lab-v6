@@ -1,16 +1,24 @@
-import { useEffect, useState } from "react";
+import React from "react";
+import NavBar from "../components/NavBar";
+import actors from "../data-actors";
 
-function Actors() {
+export default function Actors() {
   return (
-    <>
-      <header>
-        {/* What component should go here? */}
-      </header>
+    <div>
+      <NavBar />
       <main>
-        {/* Actor info here! */}
+        <h1>Actors Page</h1>
+        {actors.map((a) => (
+          <article key={a.name}>
+            <h2>{a.name}</h2>
+            <ul>
+              {a.movies.map((mv, i) => (
+                <li key={i}>{mv}</li>
+              ))}
+            </ul>
+          </article>
+        ))}
       </main>
-    </>
+    </div>
   );
-};
-
-export default Actors;
+}
