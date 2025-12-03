@@ -6,7 +6,7 @@ export default function ErrorPage() {
     <div>
       <NavBar />
       <main>
-        <h1>Oops! Something went wrong.</h1>
+        <h1>Oops! Looks like something went wrong.</h1>
       </main>
     </div>
   );

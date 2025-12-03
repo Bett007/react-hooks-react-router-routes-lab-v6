@@ -6,9 +6,8 @@ export default function MovieCard({ movie }) {
 
   return (
     <article className="movie-card">
-      <h3>
-        <Link to={`/movie/${movie.id}`}>{movie.title}</Link>
-      </h3>
+      <h2>{movie.title}</h2>
+      <Link to={`/movie/${movie.id}`}>View Info</Link>
     </article>
   );
 }

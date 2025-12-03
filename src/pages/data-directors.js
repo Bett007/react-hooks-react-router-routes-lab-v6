@@ -1,6 +1,16 @@
 const directors = [
-  { name: "Asha Mwangi", movies: ["Moonlight Drive", "Sunrise Over Nairobi"] },
-  { name: "Peter Otieno", movies: ["Code: Origin"] },
+  {
+    name: "Scott Derrickson",
+    movies: ["Doctor Strange", "Sinister", "The Exorcism of Emily Rose"],
+  },
+  {
+    name: "Mike Mitchell",
+    movies: ["Trolls", "Alvin and the Chipmunks: Chipwrecked", "Sky High"],
+  },
+  {
+    name: "Edward Zwick",
+    movies: ["Jack Reacher: Never Go Back", "Blood Diamond", "The Siege"],
+  },
 ];
 
 export default directors;
