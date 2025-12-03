@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import NavBar from "../components/NavBar";
 import MovieCard from "../components/MovieCard";
 import { movies as localMovies } from "../data";

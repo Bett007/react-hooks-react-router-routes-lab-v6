@@ -1,5 +1,5 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function MovieCard({ movie }) {
   if (!movie) return null;
@@ -11,3 +11,10 @@ export default function MovieCard({ movie }) {
     </article>
   );
 }
+
+MovieCard.propTypes = {
+  movie: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    id: PropTypes.number.isRequired,
+  }).isRequired,
+};

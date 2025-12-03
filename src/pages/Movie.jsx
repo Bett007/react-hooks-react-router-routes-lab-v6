@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import NavBar from "../components/NavBar";
 import { movies as localMovies } from "../data";
@@ -43,7 +43,10 @@ export default function Movie() {
             <div>
               {Array.isArray(movie.genres) &&
                 movie.genres.map((g, idx) => (
-                  <span key={idx} style={{ display: "inline-block", marginRight: 8 }}>
+                  <span
+                    key={idx}
+                    style={{ display: "inline-block", marginRight: 8 }}
+                  >
                     {g}
                   </span>
                 ))}
